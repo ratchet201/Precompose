@@ -12,11 +12,16 @@ function scroll() {
 		$('.navbar').addClass('navbar-fixed-top');
 		$('.inner-nav').removeClass('container-fluid');
 		$('.inner-nav').addClass('container');
+		//$('.navbar').removeClass('navhide');
+		$('.navbar').removeClass('navhide');
+		$('.navbar').addClass('navshow');
 		$('body').addClass('body');
     } else {
 		$('.navbar').removeClass('navbar-fixed-top');
 		$('.inner-nav').addClass('container-fluid');
 		$('.inner-nav').removeClass('container');
+		$('.navbar').addClass('navhide');
+		$('.navbar').removeClass('navshow');
 		$('body').removeClass('body');
     }
 
@@ -24,6 +29,9 @@ function scroll() {
    }
 
   document.onscroll = scroll;
+  $( "#header" ).hover(function() {
+	$('#navbar').toggleClass('navhide');
+});
 
 });
 $(function() {
@@ -34,6 +42,7 @@ $(function() {
 		visible:2.9
     });
 });
+
 
 
 

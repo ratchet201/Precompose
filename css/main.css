@@ -3,11 +3,14 @@
     src: url('Gabba_All_Caps.otf');
     font-weight:400;
 }
-
+#header{
+	padding-bottom:5px;
+}
 p,a,li { font-size:14px;}
 img {max-width: 100%;height: auto !important;}
-a {color:rgb(183,93,2);}
-a:hover {text-decoration:none;}
+a {color:rgb(112,112,112);}
+a:hover {text-decoration:none;color:rgb(183,93,2);}
+.link>a>i{color:rgb(183,93,2)}
 body {
 	background-color: rgb(90,80,62);
 	background:url('../images/BG.png')0 0 repeat;
@@ -104,12 +107,32 @@ color: rgb(52,52,52);
 font-size:36px;
 font-family: 'GabbaAllCaps', Arial;
 }
+#navbar {
+    overflow: hidden;
+	min-height:0px;
+	-webkit-transition: max-height 2s;
+    -moz-transition: max-height 2s;
+    transition: max-height 2s;
+	-webkit-transition-duration: 2s;
+	-webkit-transition-duration: margin 0s;
+	-moz-transition-duration: 2s;
+	-moz-transition-duration: margin 0s;
+	-o-transition-duration: 2s;
+	-o-transition-duration: margin 0s;
+	-ms-transition-duration: 2s;
+	-ms-transition-duration:margin 0s;
+	transition-duration: 2s;
+	transition-duration:margin 0s;
+	
+}
+.navhide{
+    max-height: 0px;
+
+}
 .navbar-fixed-top {
-	-webkit-transition-duration: 0s;
-	-moz-transition-duration: 0s;
-	-o-transition-duration: 0s;
-	-ms-transition-duration: 0s;
-	transition-duration: 0s;
+}
+.navshow{
+    max-height: 500px;  
 }
 .container {
 	background:rgb(254,251,244);

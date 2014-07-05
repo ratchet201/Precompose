@@ -14,48 +14,59 @@
 	
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/precompose.js"></script>
 <!-- IE * fix for bootstrap -->
         <!--[if lt IE 9]>
             <link href="//cdn2.content.compendiumblog.com/uploads/user/12a67f85-8b31-465a-93a1-99f578338c75/f30e0815-ecbe-453c-a2aa-16ced8dba3cf/File/5edc054fa41fefdffcec1fa5dbf74fa3/sm_plus.css" rel="stylesheet"/>
             <link href="//cdn2.content.compendiumblog.com/uploads/user/12a67f85-8b31-465a-93a1-99f578338c75/f30e0815-ecbe-453c-a2aa-16ced8dba3cf/File/d87bc65678f68b7696004fa24219303e/md_plus.css" rel="stylesheet"/>
             <style>.container{width: 1170px;max-width: 100%}.hidden-lg, .hidden-md{display:none !important;}.visible-lg, .visible-md{display: block !important;}</style>
         <![endif]-->
-  </head>
+  </head>       
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 logo">
-               		<a href="./index.html">
+            <div id="header">
+                <div class="row">
+                    <div id="logo" class="col-sm-12 logo hidden-xs">
+                        <a href="./index.html">
   						<img src="images/logo.png"  />
 					</a>
-                
+                    </div>
                 </div>
+                <nav id="navbar" class="navbar navbar-default navhide" role="navigation">
+                    <div class="inner-nav container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            
+                        </div>
+    
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse .navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="about.html">about<span style="color:rgb(193,83,2);">.</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">res<span style="color:rgb(193,83,2);">.</span></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:bakerzt@gmail.com?Subject=Hello Zack, from precompose..">contact<span style="color:rgb(193,83,2);">.</span></a>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
             </div>
-            <nav class="navbar navbar-default" role="navigation">
-  				<div class="container-fluid">
-    			<!-- Brand and toggle get grouped for better mobile display -->
-    				<div class="navbar-header">
-      					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-        					<span class="sr-only">Toggle navigation</span>
-        					<span class="icon-bar"></span>
-        					<span class="icon-bar"></span>
-        					<span class="icon-bar"></span>
-      					</button>
-    				</div>
-
-    				<!-- Collect the nav links, forms, and other content for toggling -->
-    				<div class="collapse navbar-collapse" id="navbar-collapse-1">
-      					<ul class="nav navbar-nav">
-        					<li><a href="about.html">about<span style="color:rgb(193,83,2);">.</span></a></li>
-        					<li><a href="#">res<span style="color:rgb(193,83,2);">.</span></a></li>
-        					<li><a href="mailto:bakerzt@gmail.com?Subject=Hello Zack, from precompose..">contact<span style="color:rgb(193,83,2);">.</span></a></li>
-      					</ul>
-    				</div><!-- /.navbar-collapse -->
-  				</div><!-- /.container-fluid -->
-			</nav>
             <div class="row">
                 <div class="col-sm-12">
-                	<p><a href="index.html" style="color:rgb(112,112,112);"><i style="color:rgb(183,93,2)" class="fa fa-long-arrow-left"></i> Work</a></p>
+                	<span class="link">
+                    	<a href="./index.html"> <i class="fa fa-long-arrow-left"></i>Work</a>
+                    </span>
                 </div>
 			</div>
             <div class="row">
@@ -99,9 +110,19 @@
             </div>	
             <div class="footer">
                 <div class="row">
-                	<div class="col-sm-6"><a href="mailto:bakerzt@gmail.com?Subject=Hello Zack, from precompose.." onClick="MakeRequestDemo('player','16160667')" target="_blank">hello|at|precompose.com</a></div>
-                	<div class="col-sm-6">
-                		<div style="text-align:right;">vimeo linkedin facebook</div>
+                	<div class="col-sm-10 col-xs-7"><a href="mailto:bakerzt@gmail.com?Subject=Hello Zack, from precompose.." onClick="MakeRequestDemo('player','16160667')" target="_blank">hello|at|precompose.com</a></div>
+                	<div class="col-sm-2 col-xs-4">
+                		<div class="social-icons">
+                        	<div class="col-sm-3 col-xs-2 col-sm-offset-0 col-xs-offset-2">
+                            	<a href="#" class="vimeo"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-2">
+                            	<a href="#" class="linkedin"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-2">
+                            	<a href="#" class="facebook"></a>
+                            </div>
+                		</div>
                 	</div>
                 </div>
             </div>

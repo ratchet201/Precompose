@@ -56,10 +56,12 @@ $(function() {
 
 $(function() {
 });
-function MakeRequest(divid,url) {
+function MakeRequest(divid,url,videoDiv) {
 		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
 		$("#player").html(""); 
 		$("#player").addClass("embed-container");
+		$( ".wrapper" ).removeClass( "wrapper" );
+		$("#"+videoDiv).addClass("wrapper");
 		$("#"+divid).html(out);
 		
 				var iframe = $('#player1')[0],
@@ -74,7 +76,7 @@ function MakeRequest(divid,url) {
 	});
 }
 function DemoReel(divid,url){
-		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
+		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
 		$("#player").html(""); 
 		$("#player").addClass("embed-container");
 		$("#"+divid).html(out);

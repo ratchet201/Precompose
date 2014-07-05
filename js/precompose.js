@@ -54,6 +54,17 @@ function MakeRequest(divid,url) {
 		$("#player").html(""); 
 		$("#player").addClass("embed-container");
 		$("#"+divid).html(out);
+		
+				var iframe = $('#player1')[0],
+		player = $f(iframe),
+		status = $('.status');
+	
+	// When the player is ready, add listeners for pause, finish, and playProgress
+	player.addEvent('ready', function() {
+		
+	
+		player.addEvent('finish', onFinish);
+	});
 }
 
 

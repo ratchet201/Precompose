@@ -16,6 +16,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/froogaloop.js"></script>
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script src="js/precompose.js"></script>
 	<script type="text/javascript">
     
@@ -77,7 +79,7 @@
             </div>
             <div class="row content">
             	<div class="col-xs-12">
-                    <div id="player" class="embed-container"><iframe src="http://player.vimeo.com/video/58749008?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                    <div id="player" class="embed-container"><iframe id="player1" src="http://player.vimeo.com/video/58749008?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -242,7 +244,22 @@
     //		
     //	}
     });
-    
+		var iframe = $('#player1')[0],
+		player = $f(iframe),
+		status = $('.status');
+	
+	// When the player is ready, add listeners for pause, finish, and playProgress
+	player.addEvent('ready', function() {
+		status.text('ready');
+	
+		player.addEvent('finish', onFinish);
+	});
+	
+	
+	
+	function onFinish(id) {
+		MakeRequest('player','22116078');
+	}
     </script>
 
 </html>

@@ -29,9 +29,16 @@ function scroll() {
    }
 
   document.onscroll = scroll;
-  $( "#header" ).hover(function() {
-	$('#navbar').toggleClass('navhide');
-});
+  $( "#header" ).hover(
+  function() {
+    $('#navbar').addClass( "navshow" );
+	$('#navbar').removeClass( "navhide" );
+  }, function() {
+	$('#navbar').removeClass( "navshow" );
+    $('#navbar').addClass( "navhide" );
+  }
+);
+
 
 });
 $(function() {
@@ -66,8 +73,18 @@ function MakeRequest(divid,url) {
 		player.addEvent('finish', onFinish);
 	});
 }
-
-
+function DemoReel(divid,url){
+		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
+		$("#player").html(""); 
+		$("#player").addClass("embed-container");
+		$("#"+divid).html(out);
+		
+		var iframe = $('#player1')[0],
+		player = $f(iframe),
+		status = $('.status');
+		var description = document.getElementById("description");
+		description.style.display = "none";
+}
 function MakeYouTubeRequest(divid,url) {
         out='<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/'+url+'fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/'+url+'?fs=1&amp;hl=en_US&amp;rel=0&autoplay=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="700" height="394"></embed></object>';
 		 

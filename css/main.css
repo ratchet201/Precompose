@@ -152,6 +152,24 @@ font-family: 'GabbaAllCaps', Arial;
 	transition-duration:margin 0s ease-in-out;
 	
 }
+#description {
+    overflow: hidden;
+	min-height:0px;
+	-webkit-transition: max-height 1s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+	-webkit-transition-duration: 1s ease-in-out;
+	-webkit-transition-duration: margin 0s ease-in-out;
+	-moz-transition-duration: 1s ease-in-out;
+	-moz-transition-duration: margin 0s;
+	-o-transition-duration: 1s ease-in-out;
+	-o-transition-duration: margin 0s;
+	-ms-transition-duration: 1s ease-in-out;
+	-ms-transition-duration:margin 0s ease-in-out;
+	transition-duration: 1s ease-in-out;
+	transition-duration:margin 0s ease-in-out;
+	
+}
 .navhide{
     max-height: 0px;
 

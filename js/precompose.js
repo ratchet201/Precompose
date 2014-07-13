@@ -85,7 +85,9 @@ function DemoReel(divid,url){
 		player = $f(iframe),
 		status = $('.status');
 		var description = document.getElementById("description");
-		description.style.display = "none";
+		$("#description").addClass('navhide');
+		$("#description").removeClass('navshow');
+		
 }
 function MakeYouTubeRequest(divid,url) {
         out='<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/'+url+'fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/'+url+'?fs=1&amp;hl=en_US&amp;rel=0&autoplay=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="700" height="394"></embed></object>';
@@ -187,6 +189,8 @@ function captions(video)
                 "<p>" + captions[i].desc + "</p>" +
                 "<p><strong>My duties:</strong> Composting, 2D graphics, music, VO and co-project managment.</p>";
 			description.style.display = "block";
+			$("#description").removeClass('navhide');
+			$("#description").addClass('navshow');
 			break;
 		}
 	}

@@ -15,14 +15,14 @@ function scroll() {
 		//$('.navbar').removeClass('navhide');
 		$('.navbar').removeClass('navhide');
 		$('.navbar').addClass('navshow');
-		$('body').addClass('body');
+		
     } else {
 		$('.navbar').removeClass('navbar-fixed-top');
 		$('.inner-nav').addClass('container-fluid');
 		$('.inner-nav').removeClass('container');
 		$('.navbar').addClass('navhide');
 		$('.navbar').removeClass('navshow');
-		$('body').removeClass('body');
+		
     }
 
 

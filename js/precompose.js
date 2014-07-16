@@ -204,6 +204,7 @@ function captions(video)
 			description.style.display = "block";
 			$("#description").removeClass('navhide');
 			$("#description").addClass('navshow');
+			
 			break;
 		}
 	}

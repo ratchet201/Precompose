@@ -27,23 +27,10 @@ body {
 	background: rgb(254,251,244);
 	-webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,1);
 	box-shadow: 0 0 20px 5px rgba(0,0,0,1); }
-#logo{
-  border-bottom: 1px solid rgb(254,251,244) ;
-  transition : border 1.5s ease; 
-  -webkit-transition: border-color 1s ease;
-  -moz-transition: border-color 1s ease;
-  -o-transition: border-color 1s ease;
-  -ms-transition: border-color 1s ease;
-  transition: border-color 1s ease;   
-       
-}
-#logo:hover{
-   border-bottom: 1px solid #EEE;  
-}
 .logo {
 	text-align:center;
 	padding-top:30px;
-	
+	border-bottom: 1px solid #EEE;
 }
 .thumbnails img {padding:10px 0;}
 .footer {border-top:1px solid rgb(220,218,212);margin:30px 0;padding:20px 0; }
@@ -127,7 +114,6 @@ background-color: rgb(183,93,2);
 background-color: rgb(112,112,112);
 }
 .navbar-default {
-	
 background-color: transparent;
 border-color: transparent;
 margin-bottom:-5px;
@@ -153,8 +139,6 @@ font-family: 'GabbaAllCaps', Arial;
 	min-height:0px;
 	-webkit-transition: max-height 1s ease-in-out;
     -moz-transition: max-height 1s ease-in-out;
-	-ms-transition: max-height 1s ease-in-out;
-	-o-transition: max-height 1s ease-in-out;
     transition: max-height 1s ease-in-out;
 	-webkit-transition-duration: 1s ease-in-out;
 	-webkit-transition-duration: margin 0s ease-in-out;

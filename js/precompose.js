@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 var menu = $('.navbar');
 var origOffsetY = menu.offset().top;
-
+ 
 function scroll() {
 	if($('#logo').css('display') == 'none')
 	{
@@ -115,68 +115,81 @@ function captions(video)
 {
 	var captions = [{
 		"video": "96223403", // new property for this object
-    	"Title": "Name1",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "GE 'Oil and Gas'",
+    	"desc": "An internal marketing piece for a global GE employee event.<br><i>A Midwest Studios production.</i>",
+		"MyDuty": "<strong>My duties:</strong> Composting, 2D graphics, music, VO and co-project managment."
 	},
 	{
 	    "video": "17588250", // new property for this object
-    	"Title": "Name2",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "MG COLLECTIVE",
+    	"desc": "The MG Collective connects the professional community, provides quality industry leadership and education, shares ideas and collectively grows the state of Indiana's identity within the national animation industry.<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> Composting, 2D graphics, music, VO and co-project managment."
 	},
 	{
 		"video": "33295846", // new property for this object
-    	"Title": "Name3",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "Buy UR Hardware",
+    	"desc": "A mobile marketing piece. (a style test, conceptual piece)<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> Concept and Design, music, After Effects and Cinema 4D animation."
 	},
 	{
 		"video": "45914761", // new property for this object
-    	"Title": "Name4",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "North Meridian Hardware",
+    	"desc": "15 sec Broadcast Spot. (a style test, conceptual piece)<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> Concept and Design, music, After Effects and Cinema 4D animation."
 	},
 	{
 		"video": "58749008", // new property for this object
-    	"Title": "Name5",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "DWA 'Meeting Planning Services' ",
+    	"desc": "This was a marketing piece for DWA's Meeting Planning Services.<br><i>A DWA production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects animation."
 	},
 	{
 		"video": "96223407", // new property for this object
-    	"Title": "Name6",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "Encana '5 Phases'",
+    	"desc": "An informational marketing piece for Encana geared towards the education behind the acquisition of oil and natural gas resources.<br><i>A Midwest Studios production.</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects compositing, animation, VO and project management."
 	},
 	{
 		"video": "96619643", // new property for this object
-    	"Title": "Name7",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "GE 'LNG in a box'",
+    	"desc": "A external marketing piece used to educate the public about GE's, natural gas, small scale fueling solutions.<br><i>A Midwest Studios production.</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects compositing, animation, VO, music and project management."
 	},
 	{
 		"video": "77620067", // new property for this object
-    	"Title": "Name8",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "KOCH 'MegaPure'",
+    	"desc": "An external marketing piece used to educate the public about KOCH's new ultra filtration system, the MegaPure.<br><i>A Midwest Studios production.</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects animation, VO and SFX."
 	},
 	{
 		"video": "28997114", // new property for this object
-    	"Title": "Name9",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "Hendricks Regional Health",
+    	"desc": "15 sec broadcast piece.<br><i>A Bennett Innovations Production, in cooperation with Hotbed Creative.</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation."
 	},
 	{
 		"video": "77615525", // new property for this object
-    	"Title": "Name10",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "'SURFACE'",
+    	"desc": "This was a string of style test  I did for Midwest Studios when they were developing their new identity.  Based on their 6 studios, square brand geometry, services and creative process.<br><i>A Midwest Studios production.</i>",
+		"MyDuty": "<strong>My duties:</strong> Concept and Design, After Effects animation."
 	},
 	{
 		"video": "19772916", // new property for this object
-    	"Title": "Name11",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "'GAP'", 
+    	"desc": "This was a personal animation I did.  I tried to break down a spot I saw done by Ross Woods.  My goal was to see if I could figure out how he did it and replicate it myself.<br><i>A precompose production.</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Photoshop animation, SFX."
 	},
 	{
 		"video": "27924819", // new property for this object
-    	"Title": "Name12",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "'PASTEL'",
+    	"desc": "This was another personal animation I did.  My goal was to play with some shading and animation techniques that were new to me at the time.<br><i>A precompose production.</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation."
 	},
 	{
 		"video": "22116078", // new property for this object
-    	"Title": "Name13",
-    	"desc": "This is the video Descriptions. Here you will get info about the video currently playing"
+    	"Title": "'This ECO House'",
+    	"desc": "This ECO House was an intro for a web series involving green solutions for everyday  issues.<br><i>A precompose production.</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation, music and SFX."
 	}]
 
 	for (i=0; i < captions.length; i++)
@@ -186,8 +199,8 @@ function captions(video)
 			var description = document.getElementById("description");
 			description.innerHTML =                   
 				"<h2>" + captions[i].Title + "</h2>" +
-                "<p>" + captions[i].desc + "</p>" +
-                "<p><strong>My duties:</strong> Composting, 2D graphics, music, VO and co-project managment.</p>";
+                "<p>" + captions[i].desc + "</p>" + 
+				"<p>" + captions[i].MyDuty + "</p>";
 			description.style.display = "block";
 			$("#description").removeClass('navhide');
 			$("#description").addClass('navshow');

@@ -252,6 +252,30 @@
 		$( ".wrapper" ).removeClass("wrapper");
 		DemoReel('player','16160667');
 	}
+	
+	
+	$(function(){
+	var f = $('iframe'),
+    url = f.attr('src').split('?')[0];
+
+// postMessage
+function post(action, value) {
+    var data = { method: action };
+
+    if (value) {
+        data.value = value;
+    }
+    f[0].contentWindow.postMessage(JSON.stringify(data), url);
+}
+
+$('#pause').click(function() {
+    post('pause');
+});
+
+});
+	
+	
+	
     </script>
 
 </html>

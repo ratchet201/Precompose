@@ -74,10 +74,12 @@ function MakeRequest(divid,url,videoDiv) {
 		
 	function setupSimpleButtons() {
 		                    
-                            var pauseBtn = $('#res');
-							document.getElementById("res").addEventListener('click',function() {
-                            player.api('pause');
-                        }, false);	
+		var pauseBtn = $('#res');
+		PauseItems = document.getElementsByClassName("res")
+		for (i=0; i < PauseItems.length; i++)
+		{
+			PauseItems[i].addEventListener('click',function() {player.api('pause');}, false);	
+		}
 	}
 	
 	player.addEvent('finish', onFinish);setupSimpleButtons();

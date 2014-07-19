@@ -69,20 +69,22 @@ function MakeRequest(divid,url,videoDiv) {
 		status = $('.status');
 	
 	// When the player is ready, add listeners for pause, finish, and playProgress
-	player.addEvent('ready', function() {
+	player.addEvent('ready', function() 
+	{
 		
 		
-	function setupSimpleButtons() {
-		                    
-		var pauseBtn = $('#res');
-		PauseItems = document.getElementsByClassName("res")
-		for (i=0; i < PauseItems.length; i++)
+		function setupSimpleButtons() 
 		{
-			PauseItems[i].addEventListener('click',function() {player.api('pause');}, false);	
+		                    
+			var pauseBtn = $('#res');
+			PauseItems = document.getElementsByClassName("res")
+			for (i=0; i < PauseItems.length; i++)
+			{
+				PauseItems[i].addEventListener('click',function() {player.api('pause');}, false);	
+			}
 		}
-	}
-	
-	player.addEvent('finish', onFinish);setupSimpleButtons();
+		
+		player.addEvent('finish', onFinish);setupSimpleButtons();
 	});
 	
 }
@@ -98,18 +100,22 @@ function DemoReel(divid,url){
 		var description = document.getElementById("description");
 		$("#description").addClass('navhide');
 		$("#description").removeClass('navshow');
-		player.addEvent('ready', function() {
+	player.addEvent('ready', function() 
+	{
 		
 		
-	function setupSimpleButtons() {
+		function setupSimpleButtons() 
+		{
 		                    
-                            var pauseBtn = $('#res');
-							document.getElementById("res").addEventListener('click',function() {
-                            player.api('pause');
-                        }, false);	
-	}
-	
-	setupSimpleButtons();
+			var pauseBtn = $('#res');
+			PauseItems = document.getElementsByClassName("res")
+			for (i=0; i < PauseItems.length; i++)
+			{
+				PauseItems[i].addEventListener('click',function() {player.api('pause');}, false);	
+			}
+		}
+		
+		player.addEvent('finish', onFinish);setupSimpleButtons();
 	});
 	
 		

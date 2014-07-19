@@ -76,7 +76,7 @@ function MakeRequest(divid,url,videoDiv) {
 		                    
                             var pauseBtn = $('#res');
 							document.getElementById("res").addEventListener('click',function() {
-                            froogaloop.api('pause');
+                            player.api('pause');
                         }, false);	
 	}
 	

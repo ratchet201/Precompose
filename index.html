@@ -67,7 +67,8 @@
                                     <a href="about.html">about<span style="color:rgb(193,83,2);">.</span></a>
                                 </li>
                                 <li>
-                                    <a href="ZackBaker_Resume_2014.pdf" target="new" id="pause" class="pause">res<span style="color:rgb(193,83,2);">.</span></a>
+                                	<button class="pause" id="res">Pause</button>
+                                    <a href="ZackBaker_Resume_2014.pdf" target="new">res<span style="color:rgb(193,83,2);">.</span></a>
                                 </li>
                                 <li>
                                     <a href="mailto:bakerzt@gmail.com?Subject=Hello Zack, from precompose..">contact<span style="color:rgb(193,83,2);">.</span></a>
@@ -253,29 +254,14 @@
 		DemoReel('player','16160667');
 	}
 	
+	function setupSimpleButtons() {
+		                    var buttons = container.querySelector('div dl.simple'),
+                            pauseBtn = $('#res');
 	
-	$(function(){
-	var f = $('iframe'),
-    url = f.attr('src').split('?')[0];
-
-// postMessage
-function post(action, value) {
-    var data = { method: action };
-
-    if (value) {
-        data.value = value;
-    }
-    f[0].contentWindow.postMessage(JSON.stringify(data), url);
-}
-
-$('#pause').click(function() {
-    post('pause');
-});
-
-});
-	
-	
-	
+	addEvent(pauseBtn, 'click', function() {
+                            froogaloop.api('pause');
+                        }, false);
+	}
     </script>
 
 </html>

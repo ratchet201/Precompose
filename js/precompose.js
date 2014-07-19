@@ -64,7 +64,7 @@ function MakeRequest(divid,url,videoDiv) {
 		$("#"+videoDiv).addClass("wrapper");
 		$("#"+divid).html(out);
 		
-				var iframe = $('#player1')[0],
+		var iframe = $('#player1')[0],
 		player = $f(iframe),
 		status = $('.status');
 	
@@ -96,6 +96,20 @@ function DemoReel(divid,url){
 		var description = document.getElementById("description");
 		$("#description").addClass('navhide');
 		$("#description").removeClass('navshow');
+		player.addEvent('ready', function() {
+		
+		
+	function setupSimpleButtons() {
+		                    
+                            var pauseBtn = $('#res');
+							document.getElementById("res").addEventListener('click',function() {
+                            player.api('pause');
+                        }, false);	
+	}
+	
+	setupSimpleButtons();
+	});
+	
 		
 }
 function MakeYouTubeRequest(divid,url) {

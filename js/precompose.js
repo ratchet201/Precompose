@@ -1,31 +1,5 @@
 $(document).ready(function () {
-	
-	  var f = $('iframe'),
-  url = f.attr('src').split('?')[0];
-  // postMessage
-  function post(action, value) {
-  var data = { method: action };
-  if (value) {
-  data.value = value;
-  }
 
-  f.each(function(){this.contentWindow.postMessage(JSON.stringify(data), url);});
-  }
-  // Play & Pause 
-  $('.pauseAllVimeo').click(function() {
-  post('pause');
-  });
-  $('.playAllVimeo').click(function() {
-  post('play');
-  });
-
-  if (window.addEventListener){
-  window.addEventListener('message', onMessageReceived, false);
-  } else { // IE
-  window.attachEvent('onmessage', onMessageReceived, false);
-  }
-	
-	
 var menu = $('.navbar');
 var origOffsetY = menu.offset().top;
  
@@ -97,18 +71,9 @@ function MakeRequest(divid,url,videoDiv) {
 	// When the player is ready, add listeners for pause, finish, and playProgress
 	player.addEvent('ready', function() {
 		
-		
+	
 		player.addEvent('finish', onFinish);
-		player.addEvent('pause', onPause);
 	});
-	
-	
-	
-	
-	
-	
-	
-	
 }
 function DemoReel(divid,url){
 		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 

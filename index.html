@@ -221,6 +221,7 @@
             </div>
         </div>
     </body>
+    <script src="js/froogaloop2.js"></script>
 	<script type="text/javascript" charset="utf-8">
     $(".video").click(function() {
         $('html, body').animate({scrollTop: 0}, 500);
@@ -253,24 +254,6 @@
 		$( ".wrapper" ).removeClass("wrapper");
 		DemoReel('player','16160667');
 	}
-	
-	function setupSimpleButtons() {
-		                    
-                            var pauseBtn = $('#res');
-	
-	addEvent(pauseBtn, 'click', function() {
-                            froogaloop.api('pause');
-                        }, false);
-	}
-	function addEvent(element, eventName, callback) {
-                    if (element.addEventListener) {
-                        element.addEventListener(eventName, callback, false);
-                    }
-                    else {
-                        element.attachEvent('on' + eventName, callback);
-                    }
-                }
-	setupSimpleButtons()
     </script>
 
 </html>

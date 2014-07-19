@@ -71,10 +71,26 @@ function MakeRequest(divid,url,videoDiv) {
 	// When the player is ready, add listeners for pause, finish, and playProgress
 	player.addEvent('ready', function() {
 		
+		
+	function setupSimpleButtons() {
+		                    
+                            var pauseBtn = $('#res');
 	
+	addEvent(pauseBtn, 'click', function() {
+                            froogaloop.api('pause');
+                        }, false);
+	}
+	function addEvent(element, eventName, callback) {
+                    if (element.addEventListener) {
+                        element.addEventListener(eventName, callback, false);
+                    }
+                    else {
+                        element.attachEvent('on' + eventName, callback);
+                    }
+                }
+	setupSimpleButtons()
 		player.addEvent('finish', onFinish);
 	});
-	setupSimpleButtons()
 }
 function DemoReel(divid,url){
 		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 

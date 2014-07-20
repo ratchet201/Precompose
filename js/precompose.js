@@ -86,6 +86,7 @@ function MakeRequest(divid,url,videoDiv) {
 		
 		player.addEvent('finish', onFinish);setupSimpleButtons();
 	});
+	$("#body").load();
 	
 }
 function DemoReel(divid,url){
@@ -117,6 +118,7 @@ function DemoReel(divid,url){
 		
 		player.addEvent('finish', onFinish);setupSimpleButtons();
 	});
+	$("#body").load();
 	
 		
 }

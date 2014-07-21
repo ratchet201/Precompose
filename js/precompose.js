@@ -87,7 +87,15 @@ function MakeRequest(divid,url,videoDiv) {
 		player.addEvent('finish', onFinish);setupSimpleButtons();
 	});
 	$("#body").load();
+	$("#bootstrap").load();
+	$("#css").load();
 	
+}
+function onFinish()
+{
+	$("#body").load();
+	$("#bootstrap").load();
+	$("#css").load();
 }
 function DemoReel(divid,url){
 		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 

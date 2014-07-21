@@ -119,6 +119,9 @@ function DemoReel(divid,url){
 		player.addEvent('finish', onFinish);setupSimpleButtons();
 	});
 	$("#body").load();
+	$("#bootstrap").load();
+	$("#css").load();
+	
 	
 		
 }
@@ -149,80 +152,80 @@ function captions(video)
 	var captions = [{
 		"video": "96223403", // new property for this object
     	"Title": "GE 'Oil and Gas'",
-    	"desc": "An internal marketing piece for a global GE employee event.<br><i>A Midwest Studios production.</i>",
-		"MyDuty": "<strong>My duties:</strong> Composting, 2D graphics, music, VO and co-project managment."
+    	"desc": "An internal marketing piece for a global GE employee event<br><i>A Midwest Studios production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects compositing and animation, music and co-project management"
 	},
 	{
 	    "video": "17588250", // new property for this object
     	"Title": "MG COLLECTIVE",
     	"desc": "The MG Collective connects the professional community, provides quality industry leadership and education, shares ideas and collectively grows the state of Indiana's identity within the national animation industry.<br><i>A precompose production</i>",
-		"MyDuty": "<strong>My duties:</strong> Composting, 2D graphics, music, VO and co-project managment."
+		"MyDuty": "<strong>My duties:</strong> Concept and design, music, After Effects and Cinema 4D animation"
 	},
 	{
 		"video": "33295846", // new property for this object
     	"Title": "Buy UR Hardware",
-    	"desc": "A mobile marketing piece. (a style test, conceptual piece)<br><i>A precompose production</i>",
-		"MyDuty": "<strong>My duties:</strong> Concept and Design, music, After Effects and Cinema 4D animation."
+    	"desc": "A mobile marketing piece (a style test, conceptual piece)<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> Concept and design, music, After Effects and Cinema 4D animation"
 	},
 	{
 		"video": "45914761", // new property for this object
     	"Title": "North Meridian Hardware",
-    	"desc": "15 sec Broadcast Spot. (a style test, conceptual piece)<br><i>A precompose production</i>",
-		"MyDuty": "<strong>My duties:</strong> Concept and Design, music, After Effects and Cinema 4D animation."
+    	"desc": "A 15-second broadcast spot (a style test, conceptual piece)<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> Concept and design, music, After Effects and Cinema 4D animation"
 	},
 	{
 		"video": "58749008", // new property for this object
-    	"Title": "DWA 'Meeting Planning Services' ",
-    	"desc": "This was a marketing piece for DWA's Meeting Planning Services.<br><i>A DWA production</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects animation."
+    	"Title": "DWA 'Meeting Planning Services'",
+    	"desc": "A marketing piece for DWA's Meeting Planning Services<br><i>A DWA production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects animation"
 	},
 	{
 		"video": "96223407", // new property for this object
     	"Title": "Encana '5 Phases'",
-    	"desc": "An informational marketing piece for Encana geared towards the education behind the acquisition of oil and natural gas resources.<br><i>A Midwest Studios production.</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects compositing, animation, VO and project management."
+    	"desc": "An informational marketing piece for Encana geared toward the education behind the acquisition of oil and natural gas resources.<br><i>A Midwest Studios production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects compositing, animation, VO and project management"
 	},
 	{
 		"video": "96619643", // new property for this object
     	"Title": "GE 'LNG in a box'",
-    	"desc": "A external marketing piece used to educate the public about GE's, natural gas, small scale fueling solutions.<br><i>A Midwest Studios production.</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects compositing, animation, VO, music and project management."
+    	"desc": "An external marketing piece used to educate the public about GE's natural gas, small scale fueling solutions<br><i>A Midwest Studios production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects compositing, animation, VO, music and project management"
 	},
 	{
 		"video": "77620067", // new property for this object
     	"Title": "KOCH 'MegaPure'",
-    	"desc": "An external marketing piece used to educate the public about KOCH's new ultra filtration system, the MegaPure.<br><i>A Midwest Studios production.</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects animation, VO and SFX."
+    	"desc": "An external marketing piece used to educate the public about KOCH's new ultra filtration system, the MegaPure<br><i>A Midwest Studios production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects animation, VO and SFX"
 	},
 	{
 		"video": "28997114", // new property for this object
     	"Title": "Hendricks Regional Health",
-    	"desc": "15 sec broadcast piece.<br><i>A Bennett Innovations Production, in cooperation with Hotbed Creative.</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation."
+    	"desc": "A 15-second broadcast piece<br><i>A Bennett Innovations production, in cooperation with Hotbed Creative</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation"
 	},
 	{
 		"video": "77615525", // new property for this object
     	"Title": "'SURFACE'",
-    	"desc": "This was a string of style test  I did for Midwest Studios when they were developing their new identity.  Based on their 6 studios, square brand geometry, services and creative process.<br><i>A Midwest Studios production.</i>",
-		"MyDuty": "<strong>My duties:</strong> Concept and Design, After Effects animation."
+    	"desc": "A string of style test I completed for Midwest Studios when they were developing their new identity. Based on their 6 studios, square brand geometry, services and creative process<br><i>A Midwest Studios production</i>",
+		"MyDuty": "<strong>My duties:</strong> Concept and design, After Effects animation"
 	},
 	{
 		"video": "19772916", // new property for this object
     	"Title": "'GAP'", 
-    	"desc": "This was a personal animation I did.  I tried to break down a spot I saw done by Ross Woods.  My goal was to see if I could figure out how he did it and replicate it myself.<br><i>A precompose production.</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects and Photoshop animation, SFX."
+    	"desc": "A personal animation. I tried to break down a spot done by Ross Woods. My goal was to see if I could figure out how he did it and replicate it myself.<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Photoshop animation, SFX"
 	},
 	{
 		"video": "27924819", // new property for this object
     	"Title": "'PASTEL'",
-    	"desc": "This was another personal animation I did.  My goal was to play with some shading and animation techniques that were new to me at the time.<br><i>A precompose production.</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation."
+    	"desc": "A personal animation. My goal was to play with some shading and animation techniques that were new to me at the time.<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation"
 	},
 	{
 		"video": "22116078", // new property for this object
     	"Title": "'This ECO House'",
-    	"desc": "This ECO House was an intro for a web series involving green solutions for everyday  issues.<br><i>A precompose production.</i>",
-		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation, music and SFX."
+    	"desc": "An intro for a web series involving green solutions for everyday issues<br><i>A precompose production</i>",
+		"MyDuty": "<strong>My duties:</strong> After Effects and Cinema 4D animation, music and SFX"
 	}]
 
 	for (i=0; i < captions.length; i++)

@@ -94,7 +94,9 @@ function onFinish()
 }
 function DemoReel(divid,url){
 	
-		out="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1";
+		var out = ['http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1'];
+        var iframe = $('#player1');
+		iframe.attr('src', out);
 		//out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
 		document.getElementById['player1'].src = out;
 		//$("#player").html(""); 

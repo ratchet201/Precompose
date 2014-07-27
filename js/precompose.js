@@ -98,37 +98,37 @@ function onFinish()
 function DemoReel(divid,url){
 		$("#player2").hide();
 		$("#player2").html(""); 
-		var out = ['http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1'];
+		//var out = ['http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1'];
         var iframe = $('#player1');
 		iframe.attr('src', out);
-		//out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
-		//$("#player").html(""); 
-		//$("#player").addClass("embed-container");
-		//$("#"+divid).html(out);
+		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
+		$("#player").html(""); 
+		$("#player").addClass("embed-container");
+		$("#"+divid).html(out);
 		
-		//var iframe = $('#player1')[0],
-		//player = $f(iframe),
-		//status = $('.status');
+		var iframe = $('#player1')[0],
+		player = $f(iframe),
+		status = $('.status');
 		var description = document.getElementById("description");
 		$("#description").addClass('navhide');
 		$("#description").removeClass('navshow');
-	//player.addEvent('ready', function() 
-	//{
+	player.addEvent('ready', function() 
+	{
 		
 		
-		//function setupSimpleButtons() 
-		//{
+		function setupSimpleButtons() 
+		{
 		                    
-			//var pauseBtn = $('#res');
-			//PauseItems = document.getElementsByClassName("res")
-			//for (i=0; i < PauseItems.length; i++)
-			//{
-				//PauseItems[i].addEventListener('click',function() {player.api('pause');}, false);	
-			//}
-		//}
+			var pauseBtn = $('#res');
+			PauseItems = document.getElementsByClassName("res")
+			for (i=0; i < PauseItems.length; i++)
+			{
+				PauseItems[i].addEventListener('click',function() {player.api('pause');}, false);	
+			}
+		}
 		
-		//player.addEvent('finish', onFinish);setupSimpleButtons();
-	//});
+		player.addEvent('finish', onFinish);setupSimpleButtons();
+	});
 	
 	
 		

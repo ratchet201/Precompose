@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+DemoReel('player','16160667');
 var menu = $('.navbar');
 var origOffsetY = menu.offset().top;
  
@@ -95,6 +95,12 @@ function onFinish()
 {
 
 }
+function Demo()
+{
+	$("#player2").hide();
+	$("#player").show();
+}
+
 function DemoReel(divid,url){
 		$("#player2").hide();
 		//var out = ['http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1'];
@@ -105,7 +111,7 @@ function DemoReel(divid,url){
 		//$("#player").addClass("embed-container");
 		//$("#"+divid).html(out);
 		$("#player").show(); 
-		$( ".wrapper" ).removeClass( "wrapper" );
+		//$( ".wrapper" ).removeClass( "wrapper" );
 		//$("#"+divid).html(out);
 		var iframe = $('#player1')[0],
 		player = $f(iframe),

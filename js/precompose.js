@@ -99,6 +99,8 @@ function Demo()
 {
 	$("#player2").hide();
 	$("#player").show();
+	$("#description").addClass('navhide');
+	$("#description").removeClass('navshow');
 }
 
 function DemoReel(divid,url){

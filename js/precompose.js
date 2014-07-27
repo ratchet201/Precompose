@@ -57,14 +57,17 @@ $(function() {
 $(function() {
 });
 function MakeRequest(divid,url,videoDiv) {
-		out='<iframe id=player1 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
+		$("#player").hide();
 		$("#player").html(""); 
-		$("#player").addClass("embed-container");
+		out='<iframe id=player3 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
+		$("#player2").html(""); 
+		$("#player2").show(); 
+		$("#player2").addClass("embed-container");
 		$( ".wrapper" ).removeClass( "wrapper" );
 		$("#"+videoDiv).addClass("wrapper");
 		$("#"+divid).html(out);
 		
-		var iframe = $('#player1')[0],
+		var iframe = $('#player3')[0],
 		player = $f(iframe),
 		status = $('.status');
 	
@@ -93,7 +96,8 @@ function onFinish()
 
 }
 function DemoReel(divid,url){
-	
+		$("#player2").hide();
+		$("#player2").html(""); 
 		var out = ['http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=0;player_id=player1'];
         var iframe = $('#player1');
 		iframe.attr('src', out);

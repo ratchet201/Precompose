@@ -59,7 +59,7 @@ $(function() {
 function MakeRequest(divid,url,videoDiv) {
 		$("#player").hide();
 		
-		out='<iframe id=player3 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
+		out='<iframe id=player3 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player3" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
 		$("#player2").html(""); 
 		$("#player2").show(); 
 		$("#player2").addClass("embed-container");

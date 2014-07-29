@@ -96,13 +96,25 @@ function onFinish()
 
 }
 function Demo()
-{
+{		if (document.exitFullscreen) {
+    document.exitFullscreen();
+}
+else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+}
+else if (document.webkitCancelFullScreen) {
+    document.webkitCancelFullScreen();
+}
+else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+}
 	$("#player2").hide();
 	 var out='<iframe id=player3 src="" frameborder="0" ></iframe>'; 
 		$("#player2").html(""); 
 		$("#player2").addClass("embed-container");
 		$( ".wrapper" ).removeClass( "wrapper" );
 		$("#player2").html(out);
+
 	$("#player").show();
 	$("#description").addClass('navhide');
 	$("#description").removeClass('navshow');

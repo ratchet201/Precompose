@@ -1,6 +1,5 @@
 $(document).ready(function () {
 DemoReel('player','16160667');
-var videoNum = 1;
 var menu = $('.navbar');
 var origOffsetY = menu.offset().top;
  
@@ -58,16 +57,15 @@ $(function() {
 $(function() {
 });
 function MakeRequest(divid,url,videoDiv) {
-		videoNum++
 		$("#player").hide();
 		
-		out='<iframe id=player'+videoNum+ ' src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player3" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
-		$("#player"+videoNum - 1).html(""); 
-		$("#player"+videoNum).show(); 
-		$("#player"+videoNum).addClass("embed-container");
+		out='<iframe id=player3 src="http://player.vimeo.com/video/'+url+'?title=0&amp;byline=0&amp;portrait=0&amp;color=d9c787&amp;autoplay=1;player_id=player3" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'; 
+		$("#player2").html(""); 
+		$("#player2").show(); 
+		$("#player2").addClass("embed-container");
 		$( ".wrapper" ).removeClass( "wrapper" );
 		$("#"+videoDiv).addClass("wrapper");
-		$("#player"+videoNum).html(out);
+		$("#"+divid).html(out);
 		
 		var iframe = $('#player3')[0],
 		player = $f(iframe),

@@ -100,7 +100,6 @@ function Demo()
 	$("#player2").hide();
 	 var out='<iframe id=player3 src="" frameborder="0" ></iframe>'; 
 		$("#player2").html(""); 
-		$("#player2").show(); 
 		$("#player2").addClass("embed-container");
 		$( ".wrapper" ).removeClass( "wrapper" );
 		$("#player2").html(out);

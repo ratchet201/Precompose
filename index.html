@@ -265,9 +265,16 @@
 		player.addEvent('finish', onFinish);setupSimpleButtons();
 	});
 	function onFinish(id) {
+		var ua = navigator.userAgent.toLowerCase();
+	var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+	if(isAndroid) {
 		//$( ".wrapper" ).removeClass("wrapper");
-		Demo();
 		//DemoReel('player','16160667');
+	}
+	else
+	{
+		Demo();
+	}
 	}
     </script>
 
